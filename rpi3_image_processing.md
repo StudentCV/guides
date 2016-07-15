@@ -12,8 +12,8 @@ This guide will get you all set up for Python-based image processing on your Ras
 ## pylon
 Pylon contains all the software we need for interacting with Basler cameras. Builds are provided for multiple platforms.
 
-1. Download the latest pylon version from [here](http://www.baslerweb.com/de/support/download-uebersicht/downloads-software?type=28&series=0&model=0), pick the hardfloat ARM version for linux
-2. Unpack the file to a directory of choice
+1. Download the latest pylon version from [here](http://www.baslerweb.com/de/support/download-uebersicht/downloads-software?type=28&series=0&model=0), pick the hardfloat ARM version for Linux
+2. Unpack the file to a directory of your choice
 3. Follow the instructions in the `INSTALL` file. Do not attempt to run the pylon viewer as it is not bundled with ARM releases
 4. After successful installation plug in e.g. your Basler USB camera
 5. Now we will check if everything works. In your terminal move to pylon's `Samples/Grab` directory and execute `make`, then run `./Grab`, you should see some text scrolling with information about pictures being grabbed
@@ -26,7 +26,7 @@ The only missing part is connecting Python to your camera now. PyPylon takes car
 
 1. First, ensure you're using the `cv` virtualenv you created while installing OpenCV
 2. Get your exact python version by running `python --version` from within your virtualenv
-3. Using this information, pick the corresponding PyPylon version from here **LINK MISSING** (e.g. Python 3.4 → `..cp34-cp34m-linux_armv7l.whl`)
+3. Using this information, pick the corresponding PyPylon version from [here](https://github.com/StudentCV/PyPylon) (e.g. Python 3.4 → `..cp34-cp34m-linux_armv7l.whl`)
 4. Install the `whl` file with pip via `pip install *path-to-whl*`
 5. Open a Python REPL with `python` and check that running `import pypylon.pylon` does not yield any errors
 
